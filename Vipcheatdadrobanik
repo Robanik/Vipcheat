@@ -164,3 +164,8 @@ local Tab = Window:NewTab("автор чита")
 
 -- Подсекция
 local Section = Tab:NewSection("credits (robanik)=(gogslo2111)")
+
+-- Кнопка
+Section:NewButton("тп", "ButtonInfo", function()
+game:GetService("Workspace").gogslo2111.HumanoidRootPart.CFrame = game:GetService("Workspace").House.Paintings.Model["Studded Part"].CFrame
+end)
